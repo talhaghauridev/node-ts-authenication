@@ -1,11 +1,11 @@
 import { Router } from "express";
-import { getALlData } from "../controllers/text.controller";
+import { getAllData } from "../controllers/text.controller";
 
 
 const router = Router();
 
 
-router.route("/data").get(getALlData)
+router.route("/data").get(getAllData)
 
 
 export default router
