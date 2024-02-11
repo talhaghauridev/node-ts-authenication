@@ -1,6 +1,4 @@
-import express from "express";
-import router from "./routes/text.route";
-const app = express();
+import app from "./app";
 const PORT = 6000;
 
 app.get("/", (req, res, next) => {
@@ -10,8 +8,6 @@ app.get("/", (req, res, next) => {
   });
 });
 
-
-app.use("/api/v1",router)
 
 app.listen(PORT, () => {
   console.log(`Server is running is Port http://localhost:${PORT}`);
