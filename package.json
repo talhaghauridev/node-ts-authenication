@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "nodemon ./src/index.ts",
     "start": "ts-node ./src/index.ts",
-    "build":"tsc -p ."
+    "build": "tsc -p ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.2",
     "express": "^4.18.2"
   },
   "devDependencies": {
