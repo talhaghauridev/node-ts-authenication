@@ -3,12 +3,13 @@
   "builds": [
     {
       "src": "src/index.ts",
-      "use": "@vercel/node",
-      "config": { "maxLambdaSize": "2048mb" },
-      "builds": [{ "src": "**/*.ts", "use": "ts-node" }]
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "src/index.ts" }
   ]
 }
+
+
+
